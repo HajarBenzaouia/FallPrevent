@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React, {Component} from 'react';
 import { Image,TouchableOpacity,TextInput,StyleSheet, Text, View, ImageBackground } from 'react-native';
 
-import bgImage from './images/login_interface.jpg'
+import bgImage from '../images/login_interface.jpg'
 
 export default class Signup extends Component {
   render(){
@@ -10,7 +9,7 @@ export default class Signup extends Component {
 
       <ImageBackground source={bgImage} style={styles.backgroundContainer}>   
         <View style={styles.container}>
-            <Image style={{width:140, height:70}} source={require('./images/logo.png')}/>
+            <Image style={{width:140, height:70}} source={require('../images/logo.png')}/>
 
             <Text style={styles.logoText}>Welcome</Text>
             <TextInput style={styles.inputBox} underlineColorAndroid='rgba(0,0,0,0)' 
@@ -24,7 +23,7 @@ export default class Signup extends Component {
             <TouchableOpacity style={styles.button}>
               <Text style={styles.buttonText}>Login</Text>
             </TouchableOpacity>
-
+      
             <View style={styles.signupTextCont}>
               <Text style={styles.signupText}> Already, have an account?</Text>
               <Text style={styles.signupButton}>Sign in </Text>

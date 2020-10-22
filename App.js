@@ -1,14 +1,19 @@
 import React, {Component} from 'react';
-import { Image,TouchableOpacity,TextInput,StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, View} from 'react-native';
 
-import Login from './src/Login'
+import Login from './src/Login';
+import Signup from './src/Signup';
+import Tasks from './src/Notification';
+
+const Stack = createStackNavigator();
+
 
 export default class App extends Component {
   render(){
     return (
 
       <View  style={styles.container}>
-        <Login />
+        <Tasks />
       </View>
     )
   }
