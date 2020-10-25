@@ -57,7 +57,7 @@ const Task = ({ task, icon, theme, stamp }) => {
           size={30}
           style={{ color: theme, marginLeft: 5 }}
           onPress={() => {
-            alert('You delete this message!');
+            alert('cccc!');
           }}
         />
       </View>
@@ -87,7 +87,10 @@ export default function Tasks(props) {
             size={30}
             style={{ color: colors.white }}
           />
+          
           <View style={{ flexDirection: "row" }}>
+
+            <AntDesign name="user" size={30} style={{ color: colors.white }} />
             <MaterialCommunityIcons
               name="logout"
               size={30}
@@ -97,6 +100,10 @@ export default function Tasks(props) {
               }}
             />
           </View>
+            
+
+            
+
         </View>
         <View style={{ padding: 16 }}>
           <Text style={{ color: colors.white, fontSize: 30 }}>
@@ -122,6 +129,7 @@ export default function Tasks(props) {
           </View>
         </View>
       </View>
+
 
       <View
         style={{
@@ -149,6 +157,19 @@ export default function Tasks(props) {
           />
         ))}
       </ScrollView>
+
+      <View style={{ backgroundColor: colors.themeColor }}>
+        <View
+          style={{
+            padding: 16,
+            flexDirection: "row",
+            justifyContent: "space-between"
+          }}
+        >
+        </View>
+      </View>
+
+
     </View>
   );
 }

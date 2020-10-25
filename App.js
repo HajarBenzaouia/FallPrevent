@@ -5,8 +5,6 @@ import Login from './src/Login';
 import Signup from './src/Signup';
 import Tasks from './src/Notification';
 
-const Stack = createStackNavigator();
-
 
 export default class App extends Component {
   render(){
